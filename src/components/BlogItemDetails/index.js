@@ -21,7 +21,7 @@ class BlogItemDetails extends Component {
     const updatedBlogData = {
       title: data.title,
       imageUrl: data.image_url,
-      authorUrl: data.author_url,
+      avatarUrl: data.avatar_url,
       author: data.author,
       content: data.content,
       topic: data.topic,
@@ -32,7 +32,7 @@ class BlogItemDetails extends Component {
 
   render() {
     const {blogData, isLoading} = this.state
-    const {title, imageUrl, authorUrl, author, content, topic} = blogData
+    const {title, imageUrl, avatarUrl, author, content, topic} = blogData
 
     return (
       <div>
@@ -44,7 +44,7 @@ class BlogItemDetails extends Component {
           <div>
             <h1>{topic}</h1>
             <div>
-              <img src={authorUrl} alt={author} />
+              <img src={avatarUrl} alt={author} />
               <p>{author}</p>
             </div>
             <img src={imageUrl} alt={title} />

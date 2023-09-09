@@ -3,7 +3,7 @@
 .blog-item-container {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   border: 1px solid #8e8e8e;
   border-radius: 5px;
