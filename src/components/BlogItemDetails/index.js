@@ -42,7 +42,7 @@ class BlogItemDetails extends Component {
           </div>
         ) : (
           <div>
-            <h1>{topic}</h1>
+            <h1>{title}</h1>
             <div>
               <img src={avatarUrl} alt={author} />
               <p>{author}</p>
